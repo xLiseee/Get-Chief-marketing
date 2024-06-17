@@ -1,43 +1,18 @@
-
-/*
-Author       : themes_mountain
-Template Name: AIlife - AI Content Generator & Writing HTML Template
-Version      : 1.0
-*/
-/*=============================================================
-    CSS INDEX
-    =============================
-    01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
-    02. START BOOTSTRAP NAVIGATION OVERRIDES
-    03. START HOMEPAGE CSS STYLE
-    04. START TOP FEATURE DESIGN
-    05. START SERVICE AREA
-    06. START WHY CHOOSE US DESIGN
-    07. START HOW IT WORKS DESIGN
-    08. START REVIEWS DESIGN
-    09. START BLOG DESIGN
-    10. START PRICING DESIGN
-    11. START FAQ DESIGN
-    12. START FOOTER DESIGN
-    13. START SECTION TOP DESIGN
-    14. START ERROR PAGE DESIGN
-    15. START TEAM DESIGN
-    16. START LOGIN AND REGISTER PAGE DESIGN
-    17. START CONTACT PAGE DESIGN
-    18. START ABOUT PAGE & SINGLE USE CASE DESIGN
-  =============================================================*/
-/*
-* ----------------------------------------------------------------------------------------
-* 01.GENERAL STYLE
-* ----------------------------------------------------------------------------------------
-*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-style: normal;
+	font-family: Epilogue, sans-serif;
+}
 body {
 color:#232434;
-font-family: 'Mulish', sans-serif;
+	font-family: Epilogue, sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 26px;
 overflow-x:hidden;
+	font-style: normal;
 }
 
 
@@ -51,7 +26,7 @@ h5,
 h6 {
   letter-spacing: 0px;
   margin: 0px;
-  font-family: 'Mulish', sans-serif;
+	font-family: Epilogue, sans-serif;
   color: #232434;
   font-weight: 400;
 }
@@ -91,9 +66,9 @@ b, strong {
 span{font-family: 'Mulish', sans-serif;}
 .no-padding { padding: 0 }
 
-/*END PRELOADER DESIGN*/
+
 .section-padding { padding: 80px 0 }
-/*START SECTION TITLE DESIGN*/
+
 .section-title {
   margin-bottom: 60px;
   position:relative;
@@ -135,8 +110,7 @@ p.section-title-white{color:#fff;}
 	text-align: center;
 }
 .section-title-two h2 span{color: #3f3eed;}
-/*END SECTION TITLE DESIGN*/
-/*START SCROLL TO TOP*/
+
 .topcontrol {
 	background: #fff none repeat scroll 0 0;
 	border-radius: 30px;
@@ -158,15 +132,14 @@ p.section-title-white{color:#fff;}
 	transition: all 0.2s ease 0s;
 	width: 50px;
 }
-@media only screen and (max-width:768px) { 
+@media only screen and (max-width:768px) {
 .topcontrol {display:none;}
 }
 .topcontrol:hover {
     background: #3f3eed;
     color: #fff;
 }
-/*END SCROLL TO TOP*/
-/*START PRELOADER DESIGN*/
+
 .preloader {
     background: #fff;
     bottom: 0;
@@ -227,18 +200,7 @@ p.section-title-white{color:#fff;}
 	color: #fff;
 	text-shadow: none;
 }
-/*
-* ----------------------------------------------------------------------------------------
-* 01.END GENERAL STYLE
-* ----------------------------------------------------------------------------------------
-*/
 
-
-/*
-* ----------------------------------------------------------------------------------------
-* 02.START BOOTSTRAP NAVIGATION OVERRIDES
-* ----------------------------------------------------------------------------------------
-*/
 .site-logo img {
 	width: 150px;
 	height: auto;
@@ -295,7 +257,6 @@ p.section-title-white{color:#fff;}
 #main-menu ul li a {
 	color: #232434;
 	font-weight: 700;
-	text-transform: capitalize;
 	-webkit-transition:.5s;
 	-o-transition: .5s;
 	transition: .5s;
@@ -349,14 +310,14 @@ p.section-title-white{color:#fff;}
 #mobile_menu{
 	display: none;
 }
-/* Responsive Design */
-@media only screen and (max-width:1024px) { 
+
+@media only screen and (max-width:1024px) {
 #main-menu ul li {
 	margin-left: 30px;
 }
 }
-/*END 1024px*/
-@media only screen and (max-width: 991px){	
+
+@media only screen and (max-width: 991px){
 #main-menu ul li {
 	margin-left: 9px;
 }
@@ -368,7 +329,7 @@ p.section-title-white{color:#fff;}
 	background: #fff;
 }
 }
-/*END 991px*/
+
 @media only screen and (max-width: 880px){
 #main-menu{
 display: none;
@@ -403,7 +364,7 @@ top: 24px;
 background:#232434;
 }
 }
-/*END 767px*/
+
 .slicknav_nav .slicknav_arrow {
 	font-size: 0.8em;
 	margin: 0 0 0 0.4em;
@@ -427,13 +388,10 @@ right: 17px;
 	line-height: 44px;
 	text-align: center;
 }
-/*END 575px*/
-/*-------------------------------
-# Dropdwon menu 
---------------------------------*/
+
 
 #navigation #main-menu ul li ul ,
-#navigation #main-menu ul li ul li ul {	
+#navigation #main-menu ul li ul li ul {
 	background: #fff;
 	-webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,.05);
 	        box-shadow: 0 0 10px 3px rgba(0,0,0,.05);
@@ -465,11 +423,11 @@ right: 17px;
 }
 #navigation.navbar-fixed #main-menu ul li li a{
 	color: #232434;
-} 
+}
 #navigation #main-menu ul li:hover ul,
 #navigation #main-menu ul li ul li:hover > ul{
 	opacity: 1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	visibility: visible;
 }
 #navigation #main-menu ul li ul li {display: block; margin: 0; padding: 0;}
@@ -480,11 +438,10 @@ right: 17px;
 	display: block;
 	font-size: 17px;
 	font-weight: 700;
-	text-transform: capitalize;
 	padding: 7px 12px;
-	position: relative;	
-	-webkit-transition:all 0.3s ease 0s !important;	
-	-o-transition: all 0.3s ease 0s !important;	
+	position: relative;
+	-webkit-transition:all 0.3s ease 0s !important;
+	-o-transition: all 0.3s ease 0s !important;
 	transition: all 0.3s ease 0s !important;
 	visibility: inherit !important;
 	opacity: inherit !important;
@@ -500,7 +457,7 @@ right: 17px;
 }
 
 
-@media only screen and (max-width:767px) { 
+@media only screen and (max-width:767px) {
   .navbar-brand {
     padding-top: 20px;
   }
@@ -528,20 +485,10 @@ right: 17px;
 	border:1px solid #ffe06f;
 	color: #232434;
 }
-@media only screen and (max-width:880px) { 
+@media only screen and (max-width:880px) {
 .call_to_action a {padding: 10px 22px;}
 }
-/*
-* ----------------------------------------------------------------------------------------
-* 02.END BOOTSTRAP NAVIGATION OVERRIDES
-* ----------------------------------------------------------------------------------------
-*/
 
-/*
-* ----------------------------------------------------------------------------------------
-* 03. START HOMEPAGE CSS STYLE
-* ----------------------------------------------------------------------------------------
-*/
 .home_bg{
 height:750px;
 position:relative;
@@ -552,13 +499,12 @@ position:relative;
 
 
 .about_me_content{padding-top:250px;position:relative;}
-@media only screen and (max-width:768px) { 
+@media only screen and (max-width:768px) {
 .about_me_content{padding-left:30px;padding-right: 20px;}
 }
 .about_me_content h1 {
 	font-size: 58px;
 	font-weight: 900;
-	text-transform: capitalize;
 	line-height: 70px;
 	margin-bottom: 20px;
 }
@@ -574,7 +520,6 @@ position:relative;
 .about_me_content h1 b{
 font-size: 58px;
 	font-weight: 900;
-	text-transform: capitalize;
 }
 .about_me_content p {
 	margin-bottom: 40px;
@@ -599,7 +544,6 @@ font-size: 58px;
 	color: #fff;
 	font-size: 18px;
 	padding: 14px 40px;
-	text-transform: capitalize;
 	-webkit-transition:all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
@@ -609,12 +553,12 @@ font-size: 58px;
 }
 .home_one:hover, .home_one:focus{
 background:#ffe06f;
-border: 1px solid #ffe06f;	
+border: 1px solid #ffe06f;
 color: #232434;
 -webkit-box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.1);
         box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.1);
 }
- /*Image style coding*/
+
 .profile_img{padding-top:200px;}
 @media only screen and (max-width:812px){
 .profile_img{padding-top:100px;text-align: center;}
@@ -633,16 +577,7 @@ color: #232434;
 	transition: 0.3s;
 }
 .home_socials ul li a:hover{color:#6138bd;}
-/*
-* ----------------------------------------------------------------------------------------
-* 03. END HOMEPAGE CSS STYLE
-* ----------------------------------------------------------------------------------------
-*/
-/*
-* ----------------------------------------------------------------------------------------
-* 04.START TOP FEATURE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
+
 .top-feature{margin-top:-100px;position:relative;}
 .single_tf {
 	background:#fff;
@@ -689,18 +624,6 @@ color:#3f3eed;
 .single_tf:hover h3{color:#fff;}
 .single_tf p{margin-bottom: 0px;}
 .single_tf:hover p{color:#fff;}
-/* .single_tf:hover span{background: rgba(54,57,164,0.2);} */
-/*
-* ----------------------------------------------------------------------------------------
-* 04.END TOP FEATURE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 05.START SERVICE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .best-service{background:#fafbfb;}
 .single_service {
 	background:#fff;
@@ -752,7 +675,6 @@ background:#3f3eed;
 .single_service p{margin-bottom:30px;}
 .single_service:hover p{color:#fff;}
 .single_service a {
-	text-transform: capitalize;
 	font-size: 18px;
 	color: #232434;
 	font-weight: 600;
@@ -763,7 +685,7 @@ background:#3f3eed;
 }
 .single_service:hover a {
 background:#ffe06f;
-border: 1px solid #ffe06f;	
+border: 1px solid #ffe06f;
 color: #232434;
 }
 .ss_btn {
@@ -776,7 +698,6 @@ color: #232434;
 	color: #fff;
 	font-size: 18px;
 	padding: 14px 40px;
-	text-transform: capitalize;
 	-webkit-transition:all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
@@ -786,27 +707,15 @@ color: #232434;
 }
 .ss_btn a:hover, .ss_btn a:focus{
 background:#ffe06f;
-border: 1px solid #ffe06f;	
+border: 1px solid #ffe06f;
 color: #232434;
 -webkit-box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.1);
         box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.1);
 }
-/*
-* ----------------------------------------------------------------------------------------
-* 05.END SERVICE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 06.START WHY CHOOSE US DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .wc_content{margin-bottom:30px;position:relative;}
 .wc_content h2 {
 	font-weight: 700;
 	margin-bottom: 20px;
-	text-transform: capitalize;
 	line-height: 60px;
 	font-size: 54px;
 }
@@ -848,23 +757,11 @@ color: #232434;
 	text-align: center;
 	color: #fff;
 	line-height: 36px;
-	text-transform: capitalize;
 	right: 0;
 }
  @media only screen and (max-width:480px){
 .wc_year h3 {top: 50%;}
 }
-/*
-* ----------------------------------------------------------------------------------------
-* 06.END WHY CHOOSE US DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 07.START HOW IT WORKS DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .hiw_area {
 	position: relative;
 	background: url(../img/bg/hiw-bg.png);
@@ -959,17 +856,6 @@ font-size: 30px;
 	left: 40%;
 }
 }
-/*
-* ----------------------------------------------------------------------------------------
-* 07.END HOW IT WORKS DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 08. START REVIEWS DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .test_area{padding-bottom:50px;margin-top: 150px;}
 .single_rev {
 	position: relative;
@@ -1057,17 +943,7 @@ display:block;
     .owl-theme .owl-controls{ margin-top: 20px; }
 	 .owl-theme .owl-controls{display:none!important; }
 }
-/*
-* ----------------------------------------------------------------------------------------
-* 08.END REVIEWS DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 
-/*
-* ----------------------------------------------------------------------------------------
-* 09.START BLOG DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .article_area{padding-bottom:50px;}
 .arti_single {
 	background: #fff;
@@ -1195,7 +1071,6 @@ color: #3f3eed;}
 	outline: 0 none;
 }
 .blog_search input:focus{box-shadow:none;}
-/*START NEWSLETTER FORM*/
 .newsletter-form {
 	background: #323167;
 	padding: 40px;
@@ -1206,7 +1081,6 @@ color: #3f3eed;}
 	margin-top: 0;
 	margin-bottom: 15px;
 	font-weight: 700;
-	text-transform: capitalize;
 	font-size: 24px;
 	line-height: 34px;
 }
@@ -1232,7 +1106,6 @@ color: #3f3eed;}
 	color: #fff;
 	font-size: 16px;
 	padding: 14px 40px;
-	text-transform: capitalize;
 	-webkit-transition:all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 	border-radius: 100px;
@@ -1243,9 +1116,6 @@ color: #3f3eed;}
 background:#fff;
 color: #232434;
 }
-/*END NEWSLETTER FORM*/
-
-/*Popular post*/
 .sidebar_title{}
 .sidebar_title h4 {
 	font-size: 16px;
@@ -1286,9 +1156,6 @@ overflow: hidden;
 	font-weight: 500;
 }
 .single_popular h5 a:hover{color:#554c86;}
-/*End Popular post*/
-
-/*Start Social media*/
 .single_social{}
 .social_item{
 padding:8px 12px;
@@ -1320,9 +1187,6 @@ font-size:13px;
 .b_tumblr{background:#34526f;}
 .b_rss{background:#e8a50e;}
 
-/*End Social media*/
-
-/*Start category*/
 .single_category{overflow:hidden;}
 .item-category{
 padding:8px 12px;
@@ -1357,7 +1221,6 @@ text-decoration:underline;
 	font-weight: 600;
 	margin: 6px 4px;
 	padding: 3px 20px;
-	text-transform: capitalize;
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
@@ -1367,7 +1230,6 @@ text-decoration:underline;
     border: 1px solid #3f3eed;
 }
 .sidebar-banner img{width:100%;}
-/*START SINGLE BLOG PAGE DESIGN*/
 .author_part {
 	margin-bottom: 30px;
 	overflow: hidden;
@@ -1445,22 +1307,9 @@ font-size: 18px;
 .comment_form input, .comment_form textarea  {}
 
 .comment_form textarea {}
-@media only screen and (max-width:768px) { 
+@media only screen and (max-width:768px) {
     .comment_form textarea { width: 100% }
 }
-/*END SINGLE BLOG PAGE DESIGN*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 09.END BLOG DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 10.START PRICING DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .price_area {
 	background: -webkit-gradient(linear,left top, left bottom,from(#fffbfb),to(#fff9f9));
 	background: -o-linear-gradient(top,#fffbfb 0%,#fff9f9 100%);
@@ -1499,7 +1348,6 @@ font-size: 18px;
 	padding-bottom: 30px;
 }
 .price-head h2 {
-	/* margin-bottom: 20px; */
 	font-size: 26px;
 	font-weight: 700;
 }
@@ -1545,16 +1393,7 @@ font-size: 18px;
 	transition: 0.3s;
 }
 .price_btn:hover{background:#ffe06f;color:#232434;}
-/*
-* ----------------------------------------------------------------------------------------
-* 10.END PRICING DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 
-/* ----------------------------------------------------------------------------------------
-* 11.START FAQ DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .faq_area{padding-bottom:50px;}
 .accordion-item {
 	border: 1px solid #ededed;
@@ -1585,10 +1424,7 @@ font-size: 18px;
 	        box-shadow: none !important;
 }
 .accordion-button:focus{-webkit-box-shadow: none !important;box-shadow: none !important;}
-/* ----------------------------------------------------------------------------------------
-* 11.END FAQ DESIGN
-* ----------------------------------------------------------------------------------------
-*/
+
 
 
 .partner_title{}
@@ -1605,18 +1441,12 @@ font-size: 18px;
 	color: #fff;
 }
 .partner.owl-theme .owl-controls{display: none !important;}
-
-/*
-* ----------------------------------------------------------------------------------------
-* 12.START FOOTER DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .footer {
 	background:#3f3eed;
 	padding-bottom: 40px;
 }
 .single_footer{}
-@media only screen and (max-width:880px) { 
+@media only screen and (max-width:880px) {
 .single_footer{margin-bottom:40px;}
 }
 .single_footer h4 {
@@ -1624,7 +1454,6 @@ font-size: 18px;
 	margin-top: 0;
 	margin-bottom: 25px;
 	font-weight: 700;
-	text-transform: capitalize;
 	font-size: 20px;
 }
 .single_footer p{color:#fff;font-weight:500;}
@@ -1643,7 +1472,6 @@ font-size: 18px;
 	line-height: 36px;
 	font-size: 16px;
 	font-weight: 500;
-	text-transform: capitalize;
 }
 .single_footer ul li a:before {
 	content: "-";
@@ -1674,7 +1502,7 @@ font-size: 18px;
 }
 
 .social_profile {margin-top:25px;overflow: hidden;}
-@media only screen and (max-width:880px) { 
+@media only screen and (max-width:880px) {
 .social_profile{margin-bottom:40px;}
 }
 .social_profile ul{
@@ -1700,7 +1528,7 @@ padding: 0;
 	border-radius: 30px;
 }
 
-@media only screen and (max-width:480px) { 
+@media only screen and (max-width:480px) {
 .social_profile ul li a{
 	width:40px;
 	height:40px;
@@ -1715,10 +1543,8 @@ background:#fff;
 .f_twitter{background:#1A90D9;}
 .f_instagram{background:#FF5252;}
 .f_linkedin{background:#0e76a8;}
-/*END SOCIAL PROFILE CSS*/
 .fc {
 	margin-top: 60px;
-	/* background: #2b2a5e; */
 	padding-top: 40px;
 	border-top: 1px solid #5554f5;
 }
@@ -1729,8 +1555,7 @@ background:#fff;
 .footer_copyright p{
 color: #fff;
 text-align: center;
-text-transform: capitalize;
-} 
+}
 .footer_menu{float: right;}
 @media only screen and (max-width:480px){
 .footer_menu {
@@ -1751,17 +1576,6 @@ text-transform: capitalize;
 color:#3f3eed;
 text-decoration: underline;
 }
-/*
-* ----------------------------------------------------------------------------------------
-* 12.END FOOTER DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 13.START SECTION TOP DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .section-top {
 	padding-top: 200px;
 	position: relative;
@@ -1773,12 +1587,11 @@ text-decoration: underline;
 .section-top-title {
 	position: relative;
 }
-@media only screen and (max-width:480px) { 
+@media only screen and (max-width:480px) {
     .section-top-title { width: 100% }
 }
 .section-top-title h1 {
 	margin-bottom: 10px;
-	text-transform: capitalize;
 	font-weight: 700;
 	font-size: 50px;
 }
@@ -1795,16 +1608,6 @@ text-decoration: underline;
 .section-top-title ul li {color: #232434!important;display: inline-block; }
 .section-top-title ul li a { color: #3f3eed!important;font-weight: 600; }
 .section-top-title ul li a:hover { color: #232434!important }
-/*
-* ----------------------------------------------------------------------------------------
-* 13.END SECTION TOP DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-/*
-* ----------------------------------------------------------------------------------------
-* 14.START ERROR PAGE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .error_page{}
 .error_page h2 {
 	font-weight: 800;
@@ -1818,16 +1621,6 @@ text-decoration: underline;
 	margin: auto;
 	margin-bottom: 40px;
 }
-/*
-* ----------------------------------------------------------------------------------------
-* 14.END ERROR PAGE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-/*
-* ----------------------------------------------------------------------------------------
-* 15.START TEAM DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .team_area{
 padding-bottom:50px;
 background:#fafbfb;
@@ -1839,7 +1632,7 @@ background:#fafbfb;
 	border: 1px solid #ededed;
 	padding: 30px;
 }
-@media only screen and (max-width:880px) { 
+@media only screen and (max-width:880px) {
 .our-team {margin-bottom:30px}
 }
 .single-team{margin-bottom:10px;}
@@ -1913,25 +1706,13 @@ display: inline-block;
 .twitter:hover{background: #fff;color:#0CBCE3!important;}
 .linkedin{background: #0e76a8;border:1px solid #0e76a8;}
 .linkedin:hover{background: #fff;color:#0e76a8!important;}
-/*
-* ----------------------------------------------------------------------------------------
-* 15.END TEAM DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 16.START LOGIN AND REGISTER PAGE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .login_register {
- 
+
 }
 .login_register_title {
 	margin-bottom: 30px;
 	margin-top: 0;
 	text-align: center;
-	text-transform: capitalize;
 	font-size: 30px;
 	font-weight: 899;
 }
@@ -1972,17 +1753,6 @@ margin-bottom:30px;
 	margin-bottom: 5px;
 	font-weight: 500;
 }
-/*
-* ----------------------------------------------------------------------------------------
-* 16.END LOGIN AND REGISTER PAGE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 17.START CONTACT PAGE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 .contact label {
 	margin-bottom: 5px;
 	font-weight: 500;
@@ -2029,7 +1799,7 @@ border: 1px solid #fff;
             box-shadow: none;
 	color: #232434;
 }
-@media only screen and (max-width:480px) { 
+@media only screen and (max-width:480px) {
     .single_address{margin-bottom:30px; }
 }
 .single_address i {
@@ -2039,7 +1809,6 @@ border: 1px solid #fff;
 	display: inline-block;
 }
 .single_address h4{
-text-transform: capitalize;
 margin-bottom: 20px;
 font-weight: 700;
 }
@@ -2048,16 +1817,6 @@ font-weight: 700;
 	border-right: 1px solid #d9d9d9;
 	border-left: 1px solid #d9d9d9;
 }
-/*
-* ----------------------------------------------------------------------------------------
-* 17.END CONTACT PAGE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-/*
-* ----------------------------------------------------------------------------------------
-* 18. START ABOUT PAGE & SINGLE USE CASE CSS
-* ----------------------------------------------------------------------------------------
-*/
 .about-page{padding-bottom:50px;}
 .ap-content{
 padding:30px;
@@ -2120,7 +1879,7 @@ overflow: hidden;
 	margin-right: 30px;
 	width: 534px;
 }
-@media only screen and (max-width:768px) { 
+@media only screen and (max-width:768px) {
 .ss_case_left {
 	margin-right:0px;
 	margin-bottom:60px;
@@ -2129,8 +1888,3 @@ overflow: hidden;
 }
 .ss_case_mr{margin-bottom: 250px;}
 
-/*
-* ----------------------------------------------------------------------------------------
-* 18. END ABOUT PAGE & SINGLE USE CASE CSS
-* ----------------------------------------------------------------------------------------
-*/

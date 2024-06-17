@@ -1,5 +1,4 @@
 jQuery(document).ready(function($){
-	//set animation timing
 	var animationDelay = 2500,
 		//loading bar effect
 		barAnimationDelay = 3800,
@@ -18,9 +17,9 @@ jQuery(document).ready(function($){
 	
 
 	function initHeadline() {
-		//insert <i> element for each letter of a changing word
+
 		singleLetters($('.cd-headline.letters').find('b'));
-		//initialise headline animation
+
 		animateHeadline($('.cd-headline'));
 	}
 
@@ -51,7 +50,7 @@ jQuery(document).ready(function($){
 					newWidth = spanWrapper.width() + 10
 				spanWrapper.css('width', newWidth);
 			} else if (!headline.hasClass('type') ) {
-				//assign to .cd-words-wrapper the width of its longest word
+
 				var words = headline.find('.cd-words-wrapper b'),
 					width = 0;
 				words.each(function(){

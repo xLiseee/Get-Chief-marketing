@@ -1,25 +1,17 @@
-/*
-Author       : themes_mountain
-Template Name: AIlife - AI Content Generator & Writing HTML Template
-Version      : 1.0
-*/
+
 (function($) {
 	'use strict';
 	
 	jQuery(document).on('ready', function(){
 
-		/*PRELOADER JS*/
 		$(window).on('load', function() {
 			$('.loader').fadeOut();
 			$('.preloader').delay(350).fadeOut('slow');
 		});
-		/*END PRELOADER JS*/
-			
-		/*START MENU JS*/				
 		$('#main-menu').slicknav({
 			label: '',
 			duration: 1000,
-			easingOpen: "easeOutBounce", //available with jQuery UI
+			easingOpen: "easeOutBounce",
 			prependTo:'#mobile_menu',
 			closeOnClick: true,
 			easingClose:"swing",
@@ -39,24 +31,18 @@ Version      : 1.0
 					$('.site-navigation, .header-white, .header').removeClass('navbar-fixed');
 				}
 			});		  	
-		/*END MENU JS*/
-		
-		/*START VIDEO JS*/
+
 		$('.video-play').magnificPopup({
             type: 'iframe'
         });
-		/*END VIDEO JS*/				
 
-		/*START PARTNER LOGO*/
 		$('.partner').owlCarousel({
-		  autoPlay: 3000, //Set AutoPlay to 3 seconds
+		  autoPlay: 3000,
 		  items : 5,
 		  itemsDesktop : [1199,3],
 		  itemsDesktopSmall : [979,3]
 		});
-		/*END PARTNER LOGO*/		
 
-		/*START TESTIMONIAL JS*/	
 		$("#testimonial-slider").owlCarousel({
 		   items:1,
 			itemsDesktop:[1000,1],
@@ -69,14 +55,11 @@ Version      : 1.0
 			slideSpeed:1000,
 			autoPlay:false
 		});
-		/*END TESTIMONIAL JS*/		
 			
 	}); 		
 	
-	
-	/*START WOW ANIMATION JS*/
-	  new WOW().init();	
-	/*END WOW ANIMATION JS*/	
+
+	  new WOW().init();
 			
 })(jQuery);
 

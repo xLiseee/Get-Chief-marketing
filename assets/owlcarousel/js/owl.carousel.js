@@ -1,16 +1,4 @@
-/*
- *  jQuery OwlCarousel v1.3.3
- *
- *  Copyright (c) 2013 Bartosz Wojciechowski
- *  http://www.owlgraphic.com/owlcarousel/
- *
- *  Licensed under MIT
- *
- */
 
-/*JS Lint helpers: */
-/*global dragMove: false, dragEnd: false, $, jQuery, alert, window, document */
-/*jslint nomen: true, continue:true */
 
 if (typeof Object.create !== "function") {
     Object.create = function (obj) {
@@ -230,7 +218,6 @@ if (typeof Object.create !== "function") {
                 base.options.items = base.orignalItems;
             }
             if (base.options.itemsCustom !== false) {
-                //Reorder array by screen size
                 base.options.itemsCustom.sort(function (a, b) {return a[0] - b[0]; });
 
                 for (i = 0; i < base.options.itemsCustom.length; i += 1) {
@@ -262,7 +249,7 @@ if (typeof Object.create !== "function") {
                 }
             }
 
-            //if number of items is less than declared
+
             if (base.options.items > base.itemsAmount && base.options.itemsScaleUp === true) {
                 base.options.items = base.itemsAmount;
             }

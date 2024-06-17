@@ -82,11 +82,6 @@
   opacity: 1;
 }
 
-/* -------------------------------- 
-
-xrotate-1 
-
--------------------------------- */
 .cd-headline.rotate-1 .cd-words-wrapper {
   -webkit-perspective: 300px;
   -moz-perspective: 300px;
@@ -253,17 +248,13 @@ xrotate-1
     opacity: 0;
   }
 }
-/* -------------------------------- 
 
-xtype 
-
--------------------------------- */
 .cd-headline.type .cd-words-wrapper {
   vertical-align: top;
   overflow: hidden;
 }
 .cd-headline.type .cd-words-wrapper::after {
-  /* vertical bar */
+
   content: '';
   position: absolute;
   right: 0;
@@ -361,11 +352,7 @@ xtype
     opacity: 0;
   }
 }
-/* -------------------------------- 
 
-xrotate-2 
-
--------------------------------- */
 .cd-headline.rotate-2 .cd-words-wrapper {
   -webkit-perspective: 300px;
   -moz-perspective: 300px;
@@ -541,11 +528,7 @@ xrotate-2
     transform: translateZ(-20px) rotateX(-90deg);
   }
 }
-/* -------------------------------- 
 
-xloading-bar 
-
--------------------------------- */
 .cd-headline.loading-bar span {
   display: inline-block;
   padding: .2em 0;
@@ -555,7 +538,7 @@ xloading-bar
   vertical-align: top;
 }
 .cd-headline.loading-bar .cd-words-wrapper::after {
-  /* loading bar */
+
   content: '';
   position: absolute;
   left: 0;
@@ -586,11 +569,6 @@ xloading-bar
   top: 0;
 }
 
-/* -------------------------------- 
-
-xslide 
-
--------------------------------- */
 .cd-headline.slide span {
   display: inline-block;
   padding: .2em 0;
@@ -724,11 +702,6 @@ xslide
     transform: translateY(100%);
   }
 }
-/* -------------------------------- 
-
-xclip 
-
--------------------------------- */
 .cd-headline.clip span {
   display: inline-block;
   padding: .2em 0;
@@ -738,7 +711,6 @@ xclip
   vertical-align: top;
 }
 .cd-headline.clip .cd-words-wrapper::after {
-  /* line */
   content: '';
   position: absolute;
   top: 0;
@@ -754,11 +726,6 @@ xclip
   opacity: 1;
 }
 
-/* -------------------------------- 
-
-xzoom 
-
--------------------------------- */
 .cd-headline.zoom .cd-words-wrapper {
   -webkit-perspective: 300px;
   -moz-perspective: 300px;
@@ -855,11 +822,6 @@ xzoom
     transform: translateZ(-100px);
   }
 }
-/* -------------------------------- 
-
-xrotate-3 
-
--------------------------------- */
 .cd-headline.rotate-3 .cd-words-wrapper {
   -webkit-perspective: 300px;
   -moz-perspective: 300px;
@@ -973,11 +935,6 @@ xrotate-3
     transform: rotateY(-180deg);
   }
 }
-/* -------------------------------- 
-
-xscale 
-
--------------------------------- */
 .cd-headline.scale b {
   opacity: 0;
 }
@@ -1109,11 +1066,6 @@ xscale
     opacity: 0;
   }
 }
-/* -------------------------------- 
-
-xpush 
-
--------------------------------- */
 .cd-headline.push b {
   opacity: 0;
 }
